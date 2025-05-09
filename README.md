@@ -10,7 +10,7 @@
 
 ## Customization
 
-In [`declarativeAgent.json`](appPackage/declarativeAgent.json), configure your interested channels, and your knowledge base.
+In [`declarativeAgent.json`](appPackage/declarativeAgent.json), configure your interested channels, and your knowledge base, in "capabilities" part.
 
 Channel URL:
 - [SDK release support](https://teams.microsoft.com/l/channel/19%3A084875bb626242ed95f3ac8dddfaa12a%40thread.skype/SDK%20release%20support?groupId=3e17dcb0-4257-4a30-b843-77f47f1d4121&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47)
