@@ -6,7 +6,8 @@
 - VS Code
 - "Teams Toolkit" extension in VS Code
 
-<<<<<<< HEAD
+![image](https://github.com/user-attachments/assets/019d0ff8-a11e-451f-859e-c849cab3e6fb)
+
 ## Customization
 
 In [`declarativeAgent.json`](appPackage/declarativeAgent.json), configure your interested channels, and your knowledge base.
@@ -19,9 +20,6 @@ Channel URL:
 
 SharePoint URL:
 - [Java SDK](https://microsoft.sharepoint.com/sites/b04971eb-82a0-451f-9302-85757ec4a221)
-=======
-![image](https://github.com/user-attachments/assets/019d0ff8-a11e-451f-859e-c849cab3e6fb)
->>>>>>> 90128db73c26f9c3016fbd3ca1b61a9d0d9042ef
 
 ## Install
 
@@ -39,6 +37,9 @@ Click "LIFECYCLE" > "Provision" to install the agent to your Teams.
 ## Usage
 
 After install, you will see a "Dev Assistant" agent, in the right side of Copilot in Teams.
+
+![image](https://github.com/user-attachments/assets/1a6fe7ba-3434-4642-8cfb-ef880406fedf)
+
 
 You can check and get update on the channels you monitor.
 
