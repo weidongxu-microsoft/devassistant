@@ -1,0 +1,5 @@
+dist
+node_modules
+
+/appPackage/build
+/env/.env.dev.user

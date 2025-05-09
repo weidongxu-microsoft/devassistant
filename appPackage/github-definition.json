@@ -1,0 +1,55 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "version": "1.0.0",
+        "title": "Github Toolkit API",
+        "description": "API to management Github."
+    },
+    "servers": [
+        {
+            "url": "https://g9f2c761-7071.asse.devtunnels.ms/api/",
+            "description": "Production server"
+        }
+    ],
+    "paths": {
+        "/github/pr/": {
+            "post": {
+                "operationId": "checkGithubPullRequest",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema":{
+                                "type": "object",
+                                "properties": {
+                                    "url": {
+                                        "type": "string",
+                                        "description": "The url of the pull request."
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "result": {
+                                            "type": "string",
+                                            "description": "The result of the pull request."
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

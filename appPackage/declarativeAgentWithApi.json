@@ -1,0 +1,40 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.3/schema.json",
+    "version": "v1.3",
+    "name": "teamsbot",
+    "description": "Declarative agent created with Teams Toolkit",
+    "instructions": "$[file('instruction.txt')]",
+    "conversation_starters": [
+        {
+            "title": "Any recent question?",
+            "text": "Search Teams channels for update or topics in the last day. Summarize the update. For the question of highest priority, propose an answer."
+        },
+        {
+            "title": "Any todo items?",
+            "text": "List all todo items."
+        }
+    ],
+    "capabilities": [
+        {
+            "name": "OneDriveAndSharePoint",
+            "items_by_url": [{
+                "url": "https://microsoft.sharepoint.com/sites/b04971eb-82a0-451f-9302-85757ec4a221"
+            }]
+        },
+        {
+            "name": "TeamsMessages",
+            "urls": [{
+                "url": "https://teams.microsoft.com/l/channel/19%3A5e673e41085f4a7eaaf20823b85b2b53%40thread.skype/Language%20-%20Java?groupId=3e17dcb0-4257-4a30-b843-77f47f1d4121&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47"
+            }]
+        }
+    ],
+    "actions": [
+        {
+            "id": "github",
+            "file": "github-plugin.json"
+        }, {
+            "id": "todo",
+            "file": "todo-plugin.json"
+        }
+    ]
+}

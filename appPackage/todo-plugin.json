@@ -1,0 +1,103 @@
+{
+    "schema_version": "v2.1",
+    "name_for_human": "Todo Items",
+    "description_for_human": "API to create / list / update my Todo items.",
+    "namespace": "todo",
+    "functions": [
+      {
+        "name": "listTodos",
+        "description": "Returns the list of todo items.",
+        "capabilities": {
+          "response_semantics": {
+            "data_path": "$.results",
+            "properties": {
+              "title": "$.title",
+              "subtitle": "$.id"
+            },
+            "static_template": {
+              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "type": "AdaptiveCard",
+              "version": "1.5",
+              "body": [
+                {
+                  "type": "Container",
+                  "$data": "${$root}",
+                  "items": [
+                    {
+                      "speak": "${title}",
+                      "type": "ColumnSet",
+                      "columns": [
+                        {
+                          "type": "Column",
+                          "items": [
+                            {
+                              "type": "TextBlock",
+                              "text": "${title}",
+                              "weight": "bolder",
+                              "size": "extraLarge",
+                              "spacing": "none",
+                              "wrap": true,
+                              "style": "heading"
+                            },
+                            {
+                              "type": "TextBlock",
+                              "text": "${id}",
+                              "wrap": true,
+                              "spacing": "none"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "createTodo",
+        "description": "Creates a new todo item.",
+        "capabilities": {
+          "response_semantics": {
+            "data_path": "$",
+            "properties": {
+              "title": "$.title",
+              "subtitle": "$.id"
+            }
+          }
+        }
+      },
+      {
+        "name": "updateTodo",
+        "description": "Updates an existing todo item.",
+        "capabilities": {
+          "response_semantics": {
+            "data_path": "$",
+            "properties": {
+              "title": "$.title",
+              "subtitle": "$.id"
+            }
+          }
+        }
+      }
+    ],
+    "runtimes": [
+      {
+        "type": "OpenApi",
+        "auth": {
+          "type": "None"
+        },
+        "spec": {
+          "url": "todo-definition.json"
+        },
+        "run_for_functions": [
+          "listTodos",
+          "createTodo",
+          "updateTodo"
+        ]
+      }
+    ]
+  }
+  
