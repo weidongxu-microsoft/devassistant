@@ -6,6 +6,7 @@
 - VS Code
 - "Teams Toolkit" extension in VS Code
 
+<<<<<<< HEAD
 ## Customization
 
 In [`declarativeAgent.json`](appPackage/declarativeAgent.json), configure your interested channels, and your knowledge base.
@@ -18,12 +19,22 @@ Channel URL:
 
 SharePoint URL:
 - [Java SDK](https://microsoft.sharepoint.com/sites/b04971eb-82a0-451f-9302-85757ec4a221)
+=======
+![image](https://github.com/user-attachments/assets/019d0ff8-a11e-451f-859e-c849cab3e6fb)
+>>>>>>> 90128db73c26f9c3016fbd3ca1b61a9d0d9042ef
 
 ## Install
 
 In "Teams Toolkit" extension:
-- Check "ACCOUNTS" that both "Custom App Update Enabled" and "Copilot Access Enabled" is green. (there is a "refresh" button on the right)
-- Click "LIFECYCLE" > "Provision" to install the agent to your Teams.
+
+Check "ACCOUNTS" that both "Custom App Update Enabled" and "Copilot Access Enabled" is green. (there is a "refresh" button on the right)
+
+![image](https://github.com/user-attachments/assets/b6956f86-69de-4429-8f54-0f53c5a53676)
+
+Click "LIFECYCLE" > "Provision" to install the agent to your Teams.
+
+![image](https://github.com/user-attachments/assets/dbae47af-f88b-4f5c-a92f-f61fedb27085)
+
 
 ## Usage
 
