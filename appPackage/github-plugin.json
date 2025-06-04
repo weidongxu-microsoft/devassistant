@@ -12,6 +12,32 @@
           "data_path": "$",
           "properties": {
             "title": "$.result"
+          },
+          "static_template": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "version": "1.5",
+            "body": [
+              {
+                "type": "Container",
+                "$data": "${$root}",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "State: ${result}",
+                    "style": "heading",
+                    "wrap": true
+                  },
+                  {
+                    "type": "TextBlock",
+                    "text": "${details}",
+                    "spacing": "small",
+                    "wrap": true,
+                    "fontType": "Monospace"
+                  }
+                ]
+              }
+            ]
           }
         }
       }

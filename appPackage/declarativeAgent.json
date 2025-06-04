@@ -6,12 +6,24 @@
     "instructions": "$[file('instruction.txt')]",
     "conversation_starters": [
         {
-            "title": "Any recent question?",
+            "title": "Any recent update?",
             "text": "Search Teams channels for update or topics in the last day. Summarize the update."
         },
         {
-            "title": "Any recent question relate to Java or code generator?",
-            "text": "Search Teams channels for update or topics on Java or code generator in the last day. Summarize the update."
+            "title": "Any recent IcM?",
+            "text": "Search Teams channels for update or topics on IcM, in the last week. Summarize the update."
+        },
+        {
+            "title": "Any recent question need my action?",
+            "text": "Search Teams channels for update or topics on Java, in the last day. Do not search documents. Summarize the update."
+        },
+        {
+            "title": "Summary about a topic",
+            "text": "Search history of Teams channel, provide me a summary about "
+        },
+        {
+            "title": "Check a PR",
+            "text": "Check GitHub PR, explain how it can be fixed "
         }
     ],
     "capabilities": [

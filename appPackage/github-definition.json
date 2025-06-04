@@ -42,6 +42,10 @@
                                         "result": {
                                             "type": "string",
                                             "description": "The result of the pull request."
+                                        },
+                                        "details": {
+                                            "type": "string",
+                                            "description": "The details of the failure."
                                         }
                                     }
                                 }
