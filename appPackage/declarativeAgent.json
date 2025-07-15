@@ -1,5 +1,5 @@
 {
-    "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.3/schema.json",
+    "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.4/schema.json",
     "version": "v1.3",
     "name": "Dev Assistant",
     "description": "Declarative agent created with Teams Toolkit",
@@ -7,19 +7,19 @@
     "conversation_starters": [
         {
             "title": "Any recent update?",
-            "text": "Search Teams channels for update or topics in the last day. Summarize the update."
+            "text": "Search Emails and Teams channels for update or topics in the last day. Summarize the update."
         },
         {
             "title": "Any recent IcM?",
-            "text": "Search Teams channels for update or topics on IcM, in the last week. Summarize the update."
+            "text": "Search Emails and Teams channels for update or topics on IcM, in the last week. Summarize the update."
         },
         {
             "title": "Any recent question need my action?",
-            "text": "Search Teams channels for update or topics on Java, in the last day. Do not search documents. Summarize the update."
+            "text": "Search Emails and Teams channels for update or topics on Java, in the last day. Do not search documents. Summarize the update."
         },
         {
             "title": "Summary about a topic",
-            "text": "Search history of Teams channel, provide me a summary about "
+            "text": "Search history of Teams channel and Emails, provide me a summary about "
         },
         {
             "title": "Check a PR",
@@ -32,6 +32,9 @@
             "items_by_url": [{
                 "url": "https://microsoft.sharepoint.com/sites/b04971eb-82a0-451f-9302-85757ec4a221"
             }]
+        },
+        {
+            "name": "Email"
         },
         {
             "name": "TeamsMessages",
